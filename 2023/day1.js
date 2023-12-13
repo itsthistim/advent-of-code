@@ -53,7 +53,6 @@ async function day1(input) {
 	return result;
 }
 
-// TODO: find edge case that breaks this
 async function day1_part2(input) {
 	let lines = input.split('\n');
 	let result = 0;
@@ -71,19 +70,18 @@ async function day1_part2(input) {
 	};
 
 	lines.forEach((line) => {
-		let numbers = line.toLowerCase().match(/\d|one|two|three|four|five|six|seven|eight|nine/g);
+		let frontReg = /^.*?(\d|one|two|three|four|five|six|seven|eight|nine)/;
+		let backReg = /^.*(\d|one|two|three|four|five|six|seven|eight|nine).*$/;
 
-		if (numbers.length > 0) {
-			let first = numbers[0];
-			let last = numbers[numbers.length - 1];
+		let first = line.match(frontReg)[1];
+		let last = line.match(backReg)[1];
 
-			let firstNumber = parseInt(first) || wordNumbers[first];
-			let lastNumber = parseInt(last) || wordNumbers[last];
+		let firstNumber = parseInt(first) || wordNumbers[first];
+		let lastNumber = parseInt(last) || wordNumbers[last];
 
-			let combined = parseInt(`${firstNumber}${lastNumber}`);
+		let combined = parseInt(`${firstNumber}${lastNumber}`);
 
-			result += combined;
-		}
+		result += combined;
 	});
 
 	return result;
