@@ -64,9 +64,6 @@ async function day4(input) {
 	return result;
 }
 
-async function day4_part2(input) {
-	let result = 0;
-	return result;
-}
+async function day4_part2(input) {}
 
 main();
