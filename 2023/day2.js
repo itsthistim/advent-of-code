@@ -14,19 +14,19 @@ Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green`;
 
 	let startTime = hrtime();
-	const part1 = await day2(actual);
+	const part1 = await solvePart1(actual);
 	let endTime = hrtime(startTime);
 
 	console.info(yellow(part1), black('\t(Part 1)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 
 	startTime = hrtime();
-	const part2 = await day2_part2(actual);
+	const part2 = await solvePart2(actual);
 	endTime = hrtime(startTime);
 
 	console.info(yellow(part2), black('\t(Part 2)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 }
 
-async function day2(input) {
+async function solvePart1(input) {
 	let lines = input.split('\n');
 	let result = 0;
 
@@ -102,7 +102,7 @@ async function day2(input) {
 	return result;
 }
 
-async function day2_part2(input) {
+async function solvePart2(input) {
 	let lines = input.split('\n');
 	let result = 0;
 

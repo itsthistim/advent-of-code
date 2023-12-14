@@ -19,19 +19,19 @@ async function main() {
 .664.598..`;
 
 	let startTime = hrtime();
-	const part1 = await day3(actual);
+	const part1 = await solvePart1(actual);
 	let endTime = hrtime(startTime);
 
 	console.info(yellow(part1), black('\t(Part 1)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 
 	startTime = hrtime();
-	const part2 = await day3_part2(actual);
+	const part2 = await solvePart2(actual);
 	endTime = hrtime(startTime);
 
 	console.info(yellow(part2), black('\t(Part 2)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 }
 
-async function day3(input) {
+async function solvePart1(input) {
 	let result = 0;
 
 	let lines = input.split('\n');
@@ -83,6 +83,6 @@ async function day3(input) {
 	return result;
 }
 
-async function day3_part2(input) {}
+async function solvePart2(input) {}
 
 main();

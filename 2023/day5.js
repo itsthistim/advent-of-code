@@ -42,19 +42,19 @@ humidity-to-location map:
 56 93 4`;
 
 	let startTime = hrtime();
-	const part1 = await day4(test);
+	const part1 = await solvePart1(test);
 	let endTime = hrtime(startTime);
 
 	console.info(yellow(part1), black('\t(Part 1)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 
 	startTime = hrtime();
-	const part2 = await day4_part2(test);
+	const part2 = await solvePart2(test);
 	endTime = hrtime(startTime);
 
 	console.info(yellow(part2), black('\t(Part 2)'), black(`(${(endTime[0] * 1000 + endTime[1] / 1000000).toFixed(3)}ms)`));
 }
 
-async function day4(input) {
+async function solvePart1(input) {
 	let lines = input.split('\n');
 	let result = 0;
 
@@ -112,6 +112,6 @@ async function day4(input) {
 	console.log(seedToSoilMap);
 }
 
-async function day4_part2(input) {}
+async function solvePart2(input) {}
 
 main();
