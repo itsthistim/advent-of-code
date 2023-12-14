@@ -60,12 +60,6 @@ async function day4(input) {
 
 	let seeds = [];
 
-	// let seeds = lines[0]
-	// 	.split('seeds: ')[1]
-	// 	.split(' ')
-	// 	.map((x) => parseInt(x))
-	// 	.filter((x) => !isNaN(x));
-
 	let seedToSoilMappings = [];
 
 	for (let i = 0; i < lines.length; i++) {
@@ -96,20 +90,6 @@ async function day4(input) {
 			}
 		}
 	}
-
-	/* Resolve Mapping
-	
-	destination_range_start = 50
-	source_range_start = 98
-	range_length = 2
-
-	In this case, destination is the seed and source is the soil
-	This means seed number 50 belongs to soil number 98
-	Seed number 51 belongs to soil number 99
-
-	Up to seed number 50, the mapping is just 1:1
-
-	*/
 
 	let seedToSoilMap = new Map();
 
