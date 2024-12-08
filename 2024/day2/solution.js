@@ -4,7 +4,7 @@ import {fileURLToPath} from 'url';
 import {run} from '../../lib/utils.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const input1 = fs.readFileSync(`${__dirname}/input1.txt`, 'utf8');
+const input1 = fs.readFileSync(`${__dirname}/input2.txt`, 'utf8');
 const input2 = fs.readFileSync(`${__dirname}/input2.txt`, 'utf8');
 
 run("Part 1", part1, input1);
@@ -56,7 +56,7 @@ function part2(input) {
 	for (let i = 0; i < reports.length; i++) {
 		let report = reports[i];
 
-		// check if all are either increasing or decreasing
+		// for a report to be safe, all containing numbers must either be increasing or decreasing
 		let increasing = false;
 		let decreasing = false;
 
@@ -82,4 +82,6 @@ function part2(input) {
 			}
 		}
 	}
+
+	return reports.filter(report => !unsafeReports.includes(report)).length;
 }
