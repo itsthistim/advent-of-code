@@ -1,11 +1,9 @@
-import fs from 'fs';
+import {readInputs, run} from '../../lib/utils.js';
 import path from 'path';
 import {fileURLToPath} from 'url';
-import {run} from '../../lib/utils.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const input1 = fs.readFileSync(`${__dirname}/input1.txt`, 'utf8');
-const input2 = fs.readFileSync(`${__dirname}/input2.txt`, 'utf8');
+const {input1, input2} = readInputs(__dirname, 'input1.txt', 'input2.txt');
 
 run("Part 1", part1, input1);
 run("Part 2", part2, input2);
