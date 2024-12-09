@@ -4,44 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024/day3/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024/day3/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024/day3/solution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day1/solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day1/solution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day2/solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day2/solution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
+    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="start day3">
+      <change afterPath="$PROJECT_DIR$/2024/day4/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/day4/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/day4/solution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024/day3/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day3/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024/day3/solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day3/solution.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "itsthistim"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;itsthistim&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/itsthistim/advent-of-code.git",
-    "accountId": "11e39cbe-1a02-4668-90d6-436e7863c076"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/itsthistim/advent-of-code.git&quot;,
+    &quot;accountId&quot;: &quot;11e39cbe-1a02-4668-90d6-436e7863c076&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2px7PGhhDUvwBnCnJfIWXHbjdQF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,18 +59,23 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "20.14.0",
     "javascript.nodejs.core.library.typings.version": "20.14.15",
-    "last_opened_file_path": "C:/dev/advent-of-code",
+    "last_opened_file_path": "C:/dev/advent-of-code/2024",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\timho\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\advent-of-code\2024" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -92,7 +95,33 @@
       <option name="presentableId" value="Default" />
       <updated>1733694165488</updated>
       <workItem from="1733695848127" duration="925000" />
+      <workItem from="1733697066209" duration="5020000" />
     </task>
+    <task id="LOCAL-00001" summary="settings">
+      <option name="closed" value="true" />
+      <created>1733697171853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697171853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new way to read inputs">
+      <option name="closed" value="true" />
+      <created>1733697208954</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697208954</updated>
+    </task>
+    <task id="LOCAL-00003" summary="start day3">
+      <option name="closed" value="true" />
+      <created>1733697267821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733697267821</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +129,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="settings" />
+    <MESSAGE value="new way to read inputs" />
+    <MESSAGE value="start day3" />
+    <option name="LAST_COMMIT_MESSAGE" value="start day3" />
   </component>
 </project>
