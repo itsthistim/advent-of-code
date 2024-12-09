@@ -9,7 +9,20 @@ run("Part 1", part1, input1);
 run("Part 2", part2, input2);
 
 function part1(input) {
-	return 0;
+	function mul(a, b) {
+		return a * b;
+	}
+
+	const instructionRegex = /mul\(\d+,\d+\)/g;
+	const instructions = input.match(instructionRegex);
+
+	let result = 0;
+	instructions.forEach(instruction => {
+		const [a, b] = instruction.match(/\d+/g).map(Number);
+		result += mul(a, b);
+	});
+
+	return result;
 }
 
 function part2(input) {
