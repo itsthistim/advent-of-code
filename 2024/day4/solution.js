@@ -12,46 +12,64 @@ function part1(input) {
 	const matrix = input.split('\r\n').map(row => row.split(''));
 	const solutionReg = /XMAS/g;
 
-
-	let horizontals = 0;
-	let verticals = 0;
-	let diagonals = 0;
+	let occurences = 0;
 
 	// check horizontally
 	for (let i = 0; i < matrix.length; i++) {
 		let row = matrix[i].join('');
-		horizontals += row.match(solutionReg)?.length || 0;
-
-		row = matrix[i].reverse().join('');
-		horizontals += row.match(solutionReg)?.length || 0;
+		occurences += row.match(solutionReg)?.length || 0;
+		occurences += row.split('').reverse().join('').match(solutionReg)?.length || 0;
 	}
 
 	// check vertically
 	for (let i = 0; i < matrix.length; i++) {
 		let column = matrix.map(row => row[i]).join('');
-		verticals += column.match(solutionReg)?.length || 0;
-
-		column = matrix.map(row => row[i]).reverse().join('');
-		verticals += column.match(solutionReg)?.length || 0;
+		occurences += column.match(solutionReg)?.length || 0;
+		occurences += column.split('').reverse().join('').match(solutionReg)?.length || 0;
 	}
 
 	// check diagonally
+	// upper left to lower right
 	for (let i = 0; i < matrix.length; i++) {
-		let diagonal = matrix.map((row, index) => row[index + i]).join('');
-		diagonals += diagonal.match(solutionReg)?.length || 0;
-
-		diagonal = matrix.map((row, index) => row[index + i]).reverse().join('');
-		diagonals += diagonal.match(solutionReg)?.length || 0;
-
-		diagonal = matrix.map((row, index) => row[index - i]).join('');
-		diagonals += diagonal.match(solutionReg)?.length || 0;
-
-		diagonal = matrix.map((row, index) => row[index - i]).reverse().join('');
-		diagonals += diagonal.match(solutionReg)?.length || 0;
+		let diagonal = '';
+		for (let j = 0; j < matrix.length - i; j++) {
+			diagonal += matrix[j][i + j];
+		}
+		occurences += diagonal.match(solutionReg)?.length || 0;
+		occurences += diagonal.split('').reverse().join('').match(solutionReg)?.length || 0;
 	}
 
-	return `${horizontals} horizontals + ${verticals} verticals + ${diagonals} diagonals = ${horizontals + verticals + diagonals}`;
+	// lower left to upper right
+	for (let i = 1; i < matrix.length; i++) {
+		let diagonal = '';
+		for (let j = 0; j < matrix.length - i; j++) {
+			diagonal += matrix[i + j][j];
+		}
+		occurences += diagonal.match(solutionReg)?.length || 0;
+		occurences += diagonal.split('').reverse().join('').match(solutionReg)?.length || 0;
+	}
 
+	// lower right to upper left
+	for (let i = 0; i < matrix.length; i++) {
+		let diagonal = '';
+		for (let j = 0; j <= i; j++) {
+			diagonal += matrix[j][i - j];
+		}
+		occurences += diagonal.match(solutionReg)?.length || 0;
+		occurences += diagonal.split('').reverse().join('').match(solutionReg)?.length || 0;
+	}
+
+	// upper right to lower left
+	for (let i = 1; i < matrix.length; i++) {
+		let diagonal = '';
+		for (let j = 0; j < matrix.length - i; j++) {
+			diagonal += matrix[j + i][matrix.length - j - 1];
+		}
+		occurences += diagonal.match(solutionReg)?.length || 0;
+		occurences += diagonal.split('').reverse().join('').match(solutionReg)?.length || 0;
+	}
+
+	return occurences;
 }
 
 function part2(input) {
