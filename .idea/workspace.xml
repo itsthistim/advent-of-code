@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="start day3">
-      <change afterPath="$PROJECT_DIR$/2024/day4/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024/day4/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024/day4/solution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day3/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day3/input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day3/solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024/day3/solution.js" afterDir="false" />
-    </list>
+    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +30,9 @@
     &quot;accountId&quot;: &quot;11e39cbe-1a02-4668-90d6-436e7863c076&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,7 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Node.js.solution.js.executor": "Run",
+    "Node.js.solution.js.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -95,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733694165488</updated>
       <workItem from="1733695848127" duration="925000" />
-      <workItem from="1733697066209" duration="5020000" />
+      <workItem from="1733697066209" duration="5574000" />
     </task>
     <task id="LOCAL-00001" summary="settings">
       <option name="closed" value="true" />
@@ -121,7 +117,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733697267821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="settings">
+      <option name="closed" value="true" />
+      <created>1733702669046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733702669046</updated>
+    </task>
+    <task id="LOCAL-00005" summary="day 3">
+      <option name="closed" value="true" />
+      <created>1733702685776</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733702685776</updated>
+    </task>
+    <task id="LOCAL-00006" summary="day 4 WIP">
+      <option name="closed" value="true" />
+      <created>1733702698992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733702698992</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,9 +149,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="settings" />
     <MESSAGE value="new way to read inputs" />
     <MESSAGE value="start day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="start day3" />
+    <MESSAGE value="settings" />
+    <MESSAGE value="day 3" />
+    <MESSAGE value="day 4 WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4 WIP" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/2024/day4/solution.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
