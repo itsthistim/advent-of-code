@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="" />
+    <list default="true" id="274876e7-c4b0-4823-8efa-919f0f5c4819" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2024/day5/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/day5/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/day5/solution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Node.js.solution.js.executor": "Debug",
+    "Node.js.solution.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,7 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\timho\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,6 +97,9 @@
       <updated>1733694165488</updated>
       <workItem from="1733695848127" duration="925000" />
       <workItem from="1733697066209" duration="5574000" />
+      <workItem from="1733732512386" duration="3168000" />
+      <workItem from="1733735736167" duration="293000" />
+      <workItem from="1734385277567" duration="5044000" />
     </task>
     <task id="LOCAL-00001" summary="settings">
       <option name="closed" value="true" />
@@ -141,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733702698992</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="formatting">
+      <option name="closed" value="true" />
+      <created>1733735674726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733735674726</updated>
+    </task>
+    <task id="LOCAL-00008" summary="day 4 part 1">
+      <option name="closed" value="true" />
+      <created>1733735698570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733735698570</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,18 +178,8 @@
     <MESSAGE value="settings" />
     <MESSAGE value="day 3" />
     <MESSAGE value="day 4 WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 4 WIP" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/2024/day4/solution.js</url>
-          <line>39</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="formatting" />
+    <MESSAGE value="day 4 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4 part 1" />
   </component>
 </project>
