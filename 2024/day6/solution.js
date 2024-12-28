@@ -1,6 +1,6 @@
-import {readInputs, run} from "../../lib/utils.js";
 import path from "path";
 import {fileURLToPath} from "url";
+import {readInputs, run} from "../../lib/utils.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const {input1, input2} = readInputs(__dirname, "input1.txt", "input2.txt");
@@ -11,7 +11,7 @@ function part1(input) {
 	function findGuard(map) {
 		for (let y = 0; y < map.length; y++) {
 			for (let x = 0; x < map[y].length; x++) {
-				if (map[y][x] === '^' || map[y][x] === 'v' || map[y][x] === '<' || map[y][x] === '>') {
+				if (map[y][x] === "^" || map[y][x] === "v" || map[y][x] === "<" || map[y][x] === ">") {
 					return {x, y, facing: map[y][x]};
 				}
 			}
@@ -27,42 +27,42 @@ function part1(input) {
 	while (guard.x >= 0 && guard.x < map[0].length && guard.y >= 0 && guard.y < map.length) {
 
 		// check whether the guard bumped into a wall
-		if (map[guard.y][guard.x] === '#') {
+		if (map[guard.y][guard.x] === "#") {
 			switch (guard.facing) {
-				case '^':
+				case "^":
 					guard.y++;
-					guard.facing = '>';
+					guard.facing = ">";
 					break;
-				case '>':
+				case ">":
 					guard.x--;
-					guard.facing = 'v';
+					guard.facing = "v";
 					break;
-				case 'v':
+				case "v":
 					guard.y--;
-					guard.facing = '<';
+					guard.facing = "<";
 					break;
-				case '<':
+				case "<":
 					guard.x++;
-					guard.facing = '^';
+					guard.facing = "^";
 					break;
 			}
 		}
 
 		// mark the current position
-		map[guard.y][guard.x] = 'X';
+		map[guard.y][guard.x] = "X";
 
 		// take a step
 		switch (guard.facing) {
-			case '^':
+			case "^":
 				guard.y--;
 				break;
-			case '>':
+			case ">":
 				guard.x++;
 				break;
-			case 'v':
+			case "v":
 				guard.y++;
 				break;
-			case '<':
+			case "<":
 				guard.x--;
 				break;
 		}
@@ -72,7 +72,7 @@ function part1(input) {
 	let visited = 0;
 	for (let y = 0; y < map.length; y++) {
 		for (let x = 0; x < map[y].length; x++) {
-			if (map[y][x] === 'X') {
+			if (map[y][x] === "X") {
 				visited++;
 			}
 		}
